@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+#import "MyClass+HelloWorld.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    MyClass *myClass=[[MyClass alloc] init];
+    [myClass myPrint];
+    [myClass helloWorld];
+
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
